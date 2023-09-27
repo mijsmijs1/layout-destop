@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>baitap-layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link href="reset.css" rel="stylesheet"/>
+    <link href="global.css" rel="stylesheet"/>
+    <link href="variables.css" rel="stylesheet"/>
+    <link href="baitap-layout.css" rel="stylesheet"/>
+    <link href="header.css" rel="stylesheet"/>
+    <link href="introduce.css" rel="stylesheet">
+    <link href="content.css" rel="stylesheet"/>
+    <link href="plan.css" rel="stylesheet"/>
+    <link href="customer-list.css" rel="stylesheet"/>
+    <link href="map.css" rel="stylesheet"/>
+    <link href="footer.css" rel="stylesheet"/>
+    <link href="responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="container__header">
+            <div class="container__header--logo">
+                <img src="data:image/jpeg;base64,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"/>
+                <span>Lasles </span>
+                <span>VPN</span>
+            </div>
+            <!--            <div class="container__header&#45;&#45;main">-->
+            <ul class="menu">
+                <li><a href="#" class="container__header--link">About</a></li>
+                <li><a href="#" class="container__header--link">Features</a></li>
+                <li><a href="#" class="container__header--link">Pricing</a></li>
+                <li><a href="#" class="container__header--link">Testimonials</a></li>
+                <li><a href="#" class="container__header--link">Help</a></li>
+                <li>
+                    <button class="container__header--signIn">Sign In</button>
+                    <button class="container__header--signUp">Sign Up</button>
+                </li>
+
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--            </div>-->
+            <div class="container__header--user">
+                <button class="container__header--signIn">Sign In</button>
+                <button class="container__header--signUp">Sign Up</button>
+            </div>
+            <!--            container__header&#45;&#45;bar-->
+
+        </div>
+        <div class="container__content">
+            <div class="container__content--main">
+                <p class="container__content--main1">Want anything to be easy with <span
+                        class="container__content--mainbold">LaslesVPN.</span></p>
+                <p class="container__content--main2">Provide a network for all your needs with ease and fun using
+                    <span class="container__content--mainbold1">LaslesVPN</span> discover interesting features from us.
+                </p>
+                <input type="button" class="container__content--button" value="Get Started"/>
+            </div>
+            <div class="container__content--pic">
+                <img src="./img/img.png">
+            </div>
+        </div>
+        <section class="container__introduce">
+            <div class="container__bar">
+                <div class="container__bar--content">
+                    <div class="container__bar--item">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="container__bar--content1">
+                        <p>90+</p><span>Users</span>
+                    </div>
+                </div>
+                <div class="container__bar--content">
+                    <div class="container__bar--item">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="container__bar--content1">
+                        <p>930+</p>
+                        <span>Locations</span>
+                    </div>
+                </div>
+                <div class="container__bar--content">
+                    <div class="container__bar--item">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="container__bar--content1">
+                        <p>50+</p><span>Servers</span>
+                    </div>
+        </section>
+        <section class="container__content1">
+            <div class="container__content1--img">
+                <img src="img/Illustration%202.png">
+            </div>
+            <div class="container__content1--desc">
+                <h2>We Provide Many Features You Can Use</h2>
+                <p>You can explore the features that we provide with fun and have their own functions each feature.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i><span>Powerfull online protection.</span></li>
+                    <li><i class="fa-solid fa-check"></i><span>Internet without borders.</span></li>
+                    <li><i class="fa-solid fa-check"></i><span>Supercharged VPN</span></li>
+                    <li><i class="fa-solid fa-check"></i><span>No specific time limits.</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container__plan">
+            <div class="container__plan--title">
+                <h2>Choose Your Plan</h2>
+                <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+            </div>
+            <div class="container__plan--select">
+                <div class="container__plan--select1">
+                    <img src="img/img_1.png">
+                    <p>Free Plan</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Unlimited Bandwitch</li>
+                        <li><i class="fa-solid fa-check"></i>Encrypted Connection</li>
+                        <li><i class="fa-solid fa-check"></i>No Traffic Logs</li>
+                        <li><i class="fa-solid fa-check"></i>Works on All Devices</li>
+                    </ul>
+                    <h3>Free</h3>
+                    <!--                    <input class="container__plan&#45;&#45;button" type="button" value="Select" />-->
+                    <button class="container__plan--button">Select</button>
+                </div>
+                <div class="container__plan--select2">
+                    <img src="img/img_1.png">
+                    <p>Standard Plan</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Unlimited Bandwitch</li>
+                        <li><i class="fa-solid fa-check"></i>Encrypted Connection</li>
+                        <li><i class="fa-solid fa-check"></i>No Traffic Logs</li>
+                        <li><i class="fa-solid fa-check"></i>Works on All Devices</li>
+                        <li><i class="fa-solid fa-check"></i>Connect Anyware</li>
+                    </ul>
+                    <h3>$9 / mo</h3>
+                    <!--                    <input type="button" value="Select" />-->
+                    <button class="container__plan--button">Select</button>
+                </div>
+                <div class="container__plan--select3">
+                    <img src="img/img_1.png">
+                    <p>Premium Plan</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Unlimited Bandwitch</li>
+                        <li><i class="fa-solid fa-check"></i>Encrypted Connection</li>
+                        <li><i class="fa-solid fa-check"></i>No Traffic Logs</li>
+                        <li><i class="fa-solid fa-check"></i>Works on All Devices</li>
+                        <li><i class="fa-solid fa-check"></i>Connect Anyware</li>
+                        <li><i class="fa-solid fa-check"></i>Get New Features</li>
+                    </ul>
+                    <h3>$12 / mo</h3>
+                    <!--                    <input type="button" value="Select" />-->
+                    <button class="container__plan--button">Select</button>
+                </div>
+            </div>
+        </section>
+        <section class="container__map">
+            <div class="container__map--title">
+                <h2>Huge Global Network of Fast VPN</h2>
+                <p>See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move locations.</p>
+            </div>
+            <div class="container__map--img">
+                <img src="./img/map.png"/>
+            </div>
+            <div class="container__map-band">
+                <img src="./img/nextflix2.png">
+                <img src="./img/reddit.png">
+                <img src="./img/amazon.jpg">
+                <img src="./img/discord.png">
+                <img src="./img/spotify.png">
+            </div>
+        </section>
+        <section class="customer">
+            <div class="customer-list">
+                <div class="customer-item">
+                    <div class="customer-top">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                            </div>
+                            <div class="customer-name">
+                                <h4>Viezh Robert</h4>
+                                <p>Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="customer-start">
+                            <span>4.5</span>
+                            <img src="img/ant-design_star-filled.svg">
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <span>“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</span>
+                    </div>
+                </div>
+                <div class="customer-item">
+                    <div class="customer-top">
+                        <div class="customer-info">
+                            <div class="customer-avatar2">
+                            </div>
+                            <div class="customer-name">
+                                <h4>Yessica Christy</h4>
+                                <p>Shanxi, China</p>
+                            </div>
+                        </div>
+                        <div class="customer-start">
+                            <span>4.5</span>
+                            <img src="img/ant-design_star-filled.svg">
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <span>“I like it because I like to travel far and still can connect with high speed.”.</span>
+                    </div>
+                </div>
+                <div class="customer-item">
+                    <div class="customer-top">
+                        <div class="customer-info">
+                            <div class="customer-avatar3">
+                            </div>
+                            <div class="customer-name">
+                                <h4>Yessica Christy</h4>
+                                <p>Shanxi, China</p>
+                            </div>
+                        </div>
+                        <div class="customer-start">
+                            <span>4.5</span>
+                            <img src="img/ant-design_star-filled.svg">
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <span>“I like it because I like to travel far and still can connect with high speed.”.</span>
+                    </div>
+                </div>
+                <div class="customer-item">
+                    <div class="customer-top">
+                        <div class="customer-info">
+                            <div class="customer-avatar3">
+                            </div>
+                            <div class="customer-name">
+                                <h4>Yessica Christy</h4>
+                                <p>Shanxi, China</p>
+                            </div>
+                        </div>
+                        <div class="customer-start">
+                            <span>4.5</span>
+                            <img src="img/ant-design_star-filled.svg">
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <span>“I like it because I like to travel far and still can connect with high speed.”.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer__subcribe">
+                <div class="footer__subcribe--content">
+                    <h2>Subscribe Now for Get Special Features!</h2>
+                    <p>Let's subscribe with us and find the fun.</p>
+                </div>
+                <div class="footer__subcribe--button">
+                    <button type="button" class="footer--button">Subscribe Now</button>
+                </div>
+            </div>
+            <div class="footer__content">
+                <div class="footer__intro">
+                    <div class="footer__intro--logo container__header--logo">
+                        <img src="data:image/jpeg;base64,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"/>
+                        <span>Lasles </span>
+                        <span>VPN</span>
+                    </div>
+                    <p><strong>LaslesVPN</strong> is a private virtual network that has unique features and has high
+                        security.</p>
+                    <div class="footer__intro--social">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <p>©2020LaslesVPN</p>
+                </div>
+                <div class="footer__info">
+                    <ul class="footer__info--product">
+                        <li>Product</li>
+                        <li>Download</li>
+                        <li>Pricing</li>
+                        <li>Locations</li>
+                        <li>Server</li>
+                        <li>Countries</li>
+                        <li>Blog</li>
+                    </ul>
+                    <ul class="footer__info--engage">
+                        <li>Engage</li>
+                        <li>LaslesVPN ?</li>
+                        <li>FAQ</li>
+                        <li>Tutorials</li>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                    <ul class="footer__info--earnmoney">
+                        <li>Earn Money</li>
+                        <li>Affiliate</li>
+                        <li>Become Partner</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script src="./script.js"></script>
+</body>
+</html>

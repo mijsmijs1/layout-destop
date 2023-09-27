@@ -1,0 +1,106 @@
+@media screen and (max-width:412px){
+    .container{
+        width: 90%;
+    }
+    .container__header--logo{
+        /*margin-left: ;*/
+    }
+    .container__header--logo img{
+        width: 42px;
+        height: 42px;
+    }
+    .container__header--logo span:nth-child(2){
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding:8px 0 0 5px;
+    }
+    .container__header--logo span:nth-child(3){
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding:8px 0 0 0;
+    }
+    .menu{
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        width: 300px;
+        z-index: 99;
+        border-left: 1px solid #ddd;
+        flex-direction: column;
+        gap: 10px 0;
+        padding-top: 60px;
+        align-items: stretch;
+        transform: translateX(100%);
+        will-change: transform;
+        transition: all 0.2s linear;
+    }
+    .menu.is-show{
+        transform: translateX(0);
+    }
+    .container__header--link{
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+    .container__header--user{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: inline-flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    /*.menu{*/
+    /*    display: none;*/
+    /*    width: 30px;*/
+    /*    height: 20px;*/
+    /*}*/
+    .menu li button{
+        display: inline-flex;
+    }
+    .container__content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .container__content .container__content--pic{
+        /*height: 380px;*/
+        width: 100%;
+    }
+    .container__content--pic{
+        width: 360px;
+        height: 300px;
+    }
+    .container__content .container__content--pic img{
+        width: 360px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .container__content--main{
+        width: 360px;
+    }
+    .container__content .container__content--main1{
+        font-size: 35px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container__content .container__content--main2{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .container__content .container__content--main .container__content--button{
+        margin-top: 0;
+        width: 145px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
